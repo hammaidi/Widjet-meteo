@@ -1,0 +1,66 @@
+/* style et positionnement du widget */
+#container {
+    height: 600px;
+    width: 400px;
+    background: url(bg.jpg) no-repeat;
+    background-size:cover; /* adapte la taille de l'image au container */
+    border-radius: 15%; /* arrondi les angles */
+    text-align: center; /* pour centrer le contenu du container */
+    color: #007e79; /* couleur du texte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* police d'écriture */
+}
+
+
+/* Style et positionnement barre de recherche */
+#zoneTxt {
+    width: 100%; /* occupe toute la largeur du container */
+    height: 18%; /* hauteur de la barre de recherche */
+    background: none; /* transparence de la barre de recherche */
+    text-align: center; /* texte saisi centré */
+    font-size: 40px; /* taille du texte */
+    border: none; /* pas de bordure */
+    color: rgb(255, 253, 108); /* couleur du texte sinon noir */
+}
+
+/* lorsque la zone a le focus on lui enlève les bordures, essayez sans pour voir la différence */
+#zoneTxt:focus {
+    outline: none; /* pas de bordure */
+}
+
+/* propriétés de la barre horizontale */
+hr {
+    margin: 6px;
+    margin-top: 3px;
+}
+
+/* Style et positionnement de la de la ville */
+#ville {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Style et positionnement de la de la date */
+#date {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style et positionnement de la de la temp */
+#temp {
+    padding: 10%; /* on l'isole au centre du container, repousse les blocs adjacents  de 10% de l'espace container */
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow:  6px 4px rgba(216, 110, 40, 0.5);
+    /* permet d'ajouter une ombre derrière le texte avec 3 paramètres 
+        le premier à 6px permet de déterminer l'ombre sur l'axe X
+        le deuxième à 4px, pareil sur l'axe Y
+        enfin le 3ème la couleur de l'ombre
+    */
+}
+
+/* Style et positionnement du temps et des bornes*/
+#meteo, #humidite {
+    font-size: 20px;
+    font-weight: bold;
+}
+
